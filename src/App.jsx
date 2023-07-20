@@ -14,8 +14,6 @@ function App() {
     setSortBy((prevSortBy) => (prevSortBy === "name" ? "id" : "name"));
   };
 
-  throw new Error("rompí todo");
-
   return (
     <div className="app">
       <Header
