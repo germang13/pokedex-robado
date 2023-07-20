@@ -1,18 +1,20 @@
-import React, { useState } from 'react';
-import Header from './Components/Header';
-import Cards from './Components/Cards';
+import React, { useState } from "react";
+import Header from "./Components/Header";
+import Cards from "./Components/Cards";
 
 function App() {
-  const [filterValue, setFilterValue] = useState('');
-  const [sortBy, setSortBy] = useState('id');
+  const [filterValue, setFilterValue] = useState("");
+  const [sortBy, setSortBy] = useState("id");
 
   const handleFilterChange = (value) => {
     setFilterValue(value);
   };
 
   const handleSortChange = () => {
-    setSortBy((prevSortBy) => (prevSortBy === 'name' ? 'id' : 'name'));
+    setSortBy((prevSortBy) => (prevSortBy === "name" ? "id" : "name"));
   };
+
+  throw new Error("rompí todo");
 
   return (
     <div className="app">
